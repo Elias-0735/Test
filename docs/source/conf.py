@@ -12,18 +12,19 @@ author = 'test'
 release = 'v0.1'
 
 # -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
-extensions = ['myst_parser']
+extensions = [
+    'myst_parser',
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
 
-# ========= sphinx‑intl多语言配置 =========
-locale_dirs = ['../locale/']   # locale和source平级，../向上跳一级
-gettext_compact = False
+# sphinx‑intl i18n 设置
 language = "en"
+locale_dirs = ["../locale/"]
+gettext_compact = False
 
+# -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
@@ -31,3 +32,4 @@ html_copy_source = False
 html_show_sourcelink = False
 html_show_sphinx = False
 html_secnumber_suffix = ' '
+
