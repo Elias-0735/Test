@@ -27,6 +27,7 @@ gettext_compact = False
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_css_files = ["css/hide_top_select.css"]
 
 html_theme_options = {
     "version_selector": False,
